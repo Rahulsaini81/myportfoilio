@@ -1880,3 +1880,39 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
+
+
+ #header-bar {
+      width: 100%;
+      padding: 10px 20px;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 9999;
+      font-family: sans-serif;
+    }
+
+    body.dark-mode #header-bar {
+      background: #1f1f1f;
+    }
+
+    #toggle-mode {
+      padding: 6px 12px;
+      cursor: pointer;
+    }
+
+    #location-info {
+      font-size: 14px;
+    }
+
+    html {
+      scroll-padding-top: 60px;
+    }
+
+    body {
+      padding-top: 60px;
+    }
