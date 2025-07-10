@@ -157,32 +157,3 @@ for (let i = 0; i < navigationLinks.length; i++) {
 
   });
 }
-
- // Location Detection
-  fetch('https://ipinfo.io/json?token=90ac18e60d50a7') // Replace YOUR_TOKEN with your real token
-    .then(res => res.json())
-    .then(data => {
-      document.getElementById('location-info').textContent =
-        🌍 You're visiting from: ${data.city}, ${data.country};
-    })
-    .catch(() => {
-      document.getElementById('location-info').textContent =
-        '🌍 Unable to detect location';
-    });
-
-  // Dark Mode Toggle
-  const btn = document.getElementById('toggle-mode');
-  const body = document.body;
-
-  // Load saved mode
-  if (localStorage.getItem('mode') === 'dark') {
-    body.classList.add('dark-mode');
-    btn.textContent = '☀ Light Mode';
-  }
-
-  btn.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    const isDark = body.classList.contains('dark-mode');
-    btn.textContent = isDark ? '☀ Light Mode' : '🌙 Dark Mode';
-    localStorage.setItem('mode', isDark ? 'dark' : 'light');
-  });
