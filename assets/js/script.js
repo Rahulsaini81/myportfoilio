@@ -159,7 +159,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
  // Location Detection
-  fetch('https://ipinfo.io/json?token=YOUR_TOKEN') // Replace YOUR_TOKEN with your real token
+  fetch('https://ipinfo.io/json?token=90ac18e60d50a7') // Replace YOUR_TOKEN with your real token
     .then(res => res.json())
     .then(data => {
       document.getElementById('location-info').textContent =
