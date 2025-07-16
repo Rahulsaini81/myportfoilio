@@ -463,7 +463,7 @@ margin-top:80px;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
   border: 1px solid var(--jet);
-  border-radius: 0 0 12px 12px;
+  border-radius: 0px 0px 12px 12px;
   box-shadow: var(--shadow-2);
   z-index: 5;
 }
