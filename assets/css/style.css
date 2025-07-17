@@ -1881,12 +1881,3 @@ textarea.form-input::-webkit-resizer { display: none; }
   .timeline-text { max-width: 700px; }
 
 }
-
-.google_translate_element{ 
-    background-color: #1e1e1f;
-    width: max-content;
-    padding: 25px;
-    border-radius: 15px;
-    position: absolute;
-    border: 1px solid #353535;
-}
